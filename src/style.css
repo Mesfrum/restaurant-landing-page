@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Junge&display=swap");
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  word-break: break-word; 
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+
+.logo-container,
+#tabs,
+.tab-content,
+hr.solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+.tab {
+  font-family: "Federo", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tab {
+  padding: 5px 5px 5px 5px;
+  font-size: 1.25rem;
+  color: aliceblue;
+}
+
+.tab-content {
+  font-family: "Federo", sans-serif;
+  font-size: 1.1rem;
+  white-space: pre-line;
+
+  color: rgb(237, 237, 237);
+  text-align: center;
+}
+
+hr.solid {
+  border-top: 1px solid #ececec;
+  margin-bottom: 30px;
+}
+
+.selected-tab {
+  text-decoration: underline;
+}
+
+.food-description {
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.food-name {
+  font-size: 1.3rem;
+
+  padding: 0rem 0rem 0.5rem 0rem;
+}
+
+.number {
+  margin: 10px 0px 20px 0px;
+}
+
+.address {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  hr.solid {
+    margin: 1rem 20rem 2rem ;
+  }
+
+  .tab-content {
+    margin: 0rem 20rem;
+  }
+}
