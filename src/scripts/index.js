@@ -1,7 +1,7 @@
 import "/src/style.css";
 // import { camelCase } from "lodash";
-import "/src/media/logo-no-background-white-transparent.svg";
-import "/src/media/favicon.png";
+import big_logo from "/src/media/logo-no-background-white-transparent.svg";
+import small_logo from "/src/media/favicon.png";
 import { home_elememts } from "./home.js";
 import { menu_elememts } from "./menu.js";
 import { about_us_elememts } from "./about_us.js";
@@ -15,10 +15,10 @@ window.onload = () => {
   let rand = Math.floor(Math.random() * bg_colors.length);
   document.body.style.backgroundColor = bg_colors[rand];
 
-  let favIcon = document.createElement('link')
-  favIcon.rel = 'shortcut icon'
-  favIcon.href = '/dist/ad425929d3aaf8c12005.png'
-  document.head.appendChild(favIcon);
+  let fav_icon = document.createElement('link')
+  fav_icon.rel = 'shortcut icon'
+  fav_icon.href = small_logo;
+  document.head.appendChild(fav_icon);
 
   let content = document.getElementById("content");
 
@@ -27,7 +27,7 @@ window.onload = () => {
   logo_container.style.margin = "4rem 0rem 2rem";
 
   let logo = document.createElement("img");
-  logo.src = "/dist/bbe62823dd634e575ae7.svg";
+  logo.src = big_logo;
   logo.id = "kulam-logo";
   logo.style.width = "18rem";
   logo.addEventListener("click", () => {
