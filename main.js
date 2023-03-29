@@ -249,7 +249,7 @@ module.exports = __webpack_require__.p + "ed2a7057262e4373cded.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/restaurant-landing-page/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
